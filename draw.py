@@ -26,7 +26,7 @@ def drawPlot(dict):
     
     # Add accuracy values as text on the plot
     for index, (x, y) in enumerate(zip(amount_of_training_data, accuracy)):
-        plt.text(x, y + 0.0015, f'{y:.2f}', fontsize=9, ha='right')
+        plt.text(x, y + 0.0015, f'{y:.4f}', fontsize=9, ha='right')
     
     # Display the plot
     plt.show()
